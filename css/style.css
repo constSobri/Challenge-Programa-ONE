@@ -1,0 +1,38 @@
+body {
+    background-color: #E9ECF8;
+}
+
+#entrada {
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1em;
+    color: #002d64;
+    resize:none;
+    background-color: #F3F5FC;
+    border: 0;
+    border-radius: 1em;
+}
+
+#btn-encriptar {
+    font-size: 1em;
+    font-family: 'Chivo Mono', monospace;
+    color: white;
+    background-color: #0A3871;
+    border: 0.1em solid white;
+    border-radius: 2em;
+    padding: 10px 40px 10px;
+}
+
+#btn-desencriptar {
+    font-size: 1em;
+    font-family: 'Chivo Mono', monospace;
+    color: #0A3871;
+    background-color: white;
+    border: 0.1em solid #0A3871;
+    border-radius: 2em;
+    padding: 10px 27px 10px;
+}
+
+@media screen {
+    
+}
