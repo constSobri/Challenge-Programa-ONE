@@ -8,17 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Encriptador de texto gratuito</title>
 </head>
 <body>
+    <img src="res/Logo.svg" alt="Logo Alura" id="logo">
     <div id="base">
         <div id="texto-aqui">
             <textarea name="Encriptador" id="entrada" cols="30" rows="10" placeholder="Escribe lo que quieres encriptar aqui!" required></textarea>
-            <input type="button" value="Encriptar" id="btn-encriptar">
-            <input type="button" value="Desencriptar" id="btn-desencriptar">
+            <div id="btn">
+                <p><i class="fa fa-exclamation-circle"></i> Solo letras minusculas y sin acentos.</p>
+                <input type="button" value="Encriptar" id="btn-encriptar">
+                <input type="button" value="Desencriptar" id="btn-desencriptar">
+            </div>
         </div>
         <div id="texto-salida">
-            <div id="salida"></div>
+            <div id="area-salida">
+                <textarea name="salida" id="salida" cols="30" rows="10" readonly required></textarea>
+                <i class="fa fa-copy (alias)" id="copy"></i>
+                <img src="res/dibujo.svg" alt="dibujo" id="dibujo">
+                <h1 id="nose">No se han encontrado nuevos mensajes.</h1>
+            <div id="btn">
+            </div>
         </div>
     </div>
 </body>

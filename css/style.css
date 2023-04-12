@@ -1,16 +1,45 @@
+:root {
+    max-width: 100%;
+}
+
+#logo {
+    margin: 4em 1em 1em 4em;
+}
+
 body {
     background-color: #E9ECF8;
 }
 
-#entrada {
+#base {
+    display: flex;
+}
+
+#entrada,#entrada:focus {
     font-size: 2em;
     font-family: 'Ubuntu', sans-serif;
     padding: 1em;
     color: #002d64;
     resize:none;
     background-color: #F3F5FC;
-    border: 0;
+    border: none;
     border-radius: 1em;
+    outline: none;
+    margin: 2em 1em 0 2.6em;
+    filter: drop-shadow(0 0 1rem rgba(228, 228, 228, 0.829));
+}
+
+#btn {
+    display: block;
+    margin: 1em 0 0 5.5em;
+}
+
+p {
+    display: block;
+    font-size: 0.8em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    color: rgb(59, 59, 59);
+    margin-left: 1em;
 }
 
 #btn-encriptar {
@@ -26,11 +55,72 @@ body {
 #btn-desencriptar {
     font-size: 1em;
     font-family: 'Chivo Mono', monospace;
-    color: #0A3871;
-    background-color: white;
-    border: 0.1em solid #0A3871;
+    color: white;
+    background-color: #0A3871;
+    border: 0.1em solid white;
     border-radius: 2em;
     padding: 10px 27px 10px;
+}
+
+#area-salida {
+    position: relative;
+}
+
+#copy {
+    position: absolute;
+    top: 5.5em;
+    right: 6em;
+    padding: 0.7em;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#dibujo {
+    position: absolute;
+    top: 5.5em;
+    right: 15em;
+    padding: 0.7em;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+#nose {
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    color: #002d64;
+    position: absolute;
+    bottom: 3em;
+    right: 16em;
+}
+
+#salida {
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1em;
+    color: #002d64;
+    resize:none;
+    background-color: #F3F5FC;
+    border: none;
+    border-radius: 1em;
+    outline: none;
+    margin: 2em 2em 0 2em;
+    filter: drop-shadow(0 0 1rem rgba(228, 228, 228, 0.829));
+    pointer-events: none;
+}
+
+#btn-encriptar:hover {
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: 0.1em solid #0A3871;
+    cursor: pointer;
+}
+
+#btn-desencriptar:hover {
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: 0.1em solid #0A3871;
+    cursor: pointer;
 }
 
 @media screen {
