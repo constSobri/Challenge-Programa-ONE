@@ -12,6 +12,33 @@
         background-color: #E9ECF8;
     }
 
+    #redes {
+        display: flex;
+    }
+
+    #quien {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        color: #535353;
+        line-height: 1.5rem;
+    }
+
+    #lin {
+        margin-left: 1rem;
+        color: #535353;
+    }
+
+    #git {
+        margin-left: 1rem;
+        color: #535353;
+    }
+
+    }
+
     #logo {
         display: grid;
         place-items: center;
@@ -157,10 +184,17 @@
         cursor: pointer;
     }
 
+    #lin:hover {
+        color:#0A3871;
+    }
+
+    #git:hover {
+        color: #0A3871;
+    }
+
     #copy:active {
         font-size: 1.4rem;
     }
-}
 
 
 @media screen and (min-width: 1200px) {
@@ -173,9 +207,28 @@
         background-color: #E9ECF8;
     }
 
+    #quien {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.7rem;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        color: #535353;
+        line-height: 1.5rem;
+    }
+
+    #lin {
+        margin-left: 0.5rem;
+    }
+
+    #git {
+        margin-left: 0.5rem;
+    }
+
     #logo {
         display: block;
-        margin: 1rem 0 1rem 1rem;
+        margin: 0 0 1rem 1rem;
     }
 
     #base {
@@ -195,7 +248,7 @@
         background-color: #F3F5FC;
         box-sizing: border-box;
         padding: 1.3rem;
-        height: 20rem;
+        height: 19rem;
         width: 45vw;
         resize:none;
         outline: none;
@@ -260,7 +313,7 @@
         background-color: #F3F5FC;
         box-sizing: border-box;
         padding: 1.3rem;
-        height: 20rem;
+        height: 19rem;
         width: 45vw;
         resize:none;
         outline: none;
