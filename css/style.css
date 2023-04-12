@@ -2,8 +2,6 @@
     max-width: 100%;
 } */
 
-@media screen and (min-width: 320px) {
-
     html {
         font-size: 12px;
     }
@@ -37,7 +35,6 @@
         color: #535353;
     }
 
-    }
 
     #logo {
         display: grid;
@@ -94,9 +91,10 @@
         font-family: 'Chivo Mono', monospace;
         color: white;
         background-color: #0A3871;
-        border: 1px solid white;
+        border: 2px solid white;
         border-radius: 20px;
         padding: 1.5rem 3.5rem 1.5rem;
+        width: 100%;
     }
 
     #btn-desencriptar {
@@ -104,10 +102,11 @@
         font-family: 'Chivo Mono', monospace;
         color: white;
         background-color: #0A3871;
-        border: 1px solid white;
+        border: 2px solid white;
         border-radius: 20px;
         margin-top: 1rem;
         padding: 1.5rem 3.5rem 1.5rem;
+        width: 100%;
     } 
 
     #texto-salida {
@@ -173,14 +172,14 @@
     #btn-encriptar:hover {
         color: #0A3871;
         background-color: #F3F5FC;
-        border: 0.1em solid #0A3871;
+        border: 2px solid #0A3871;
         cursor: pointer;
     }
     
     #btn-desencriptar:hover {
         color: #0A3871;
         background-color: #F3F5FC;
-        border: 0.1em solid #0A3871;
+        border: 2px solid #0A3871;
         cursor: pointer;
     }
 
@@ -195,6 +194,38 @@
     #copy:active {
         font-size: 1.4rem;
     }
+
+
+@media screen and (min-width: 700px){
+
+    #botones {
+        display: flex;
+    }
+
+    #btn-encriptar {
+        font-size: 2rem;
+        font-family: 'Chivo Mono', monospace;
+        color: white;
+        background-color: #0A3871;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 1rem 1.5rem 1rem;
+        width: 60%;
+    }
+
+    #btn-desencriptar {
+        font-size: 2rem;
+        font-family: 'Chivo Mono', monospace;
+        color: white;
+        background-color: #0A3871;
+        border: 2px solid white;
+        border-radius: 20px;
+        margin-top: 0;
+        margin-left: 0.5rem;
+        padding: 1rem 1.5rem 1rem;
+        width: 60%;
+    } 
+}
 
 
 @media screen and (min-width: 1200px) {
@@ -279,9 +310,10 @@
         font-family: 'Chivo Mono', monospace;
         color: white;
         background-color: #0A3871;
-        border: 1px solid white;
+        border: 2px solid white;
         border-radius: 20px;
         padding: 0.5rem 1rem 0.5rem;
+        width: 40%;
     }
 
     #btn-desencriptar {
@@ -289,11 +321,12 @@
         font-family: 'Chivo Mono', monospace;
         color: white;
         background-color: #0A3871;
-        border: 1px solid white;
+        border: 2px solid white;
         border-radius: 20px;
         margin-top: 0;
         margin-left: 0.5rem;
         padding: 0.5rem 1rem 0.5rem;
+        width: 40%;
     } 
 
     #texto-salida {
