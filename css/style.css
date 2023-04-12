@@ -49,6 +49,11 @@
         place-items: center;
     }
 
+    #botones {
+        display: grid;
+        place-items: center;
+    }
+
     p {
         font-size: 1.3rem;
         font-family: 'Ubuntu', sans-serif;
@@ -64,7 +69,7 @@
         background-color: #0A3871;
         border: 1px solid white;
         border-radius: 20px;
-        padding: 1rem 3.5rem 1rem;
+        padding: 1.5rem 3.5rem 1.5rem;
     }
 
     #btn-desencriptar {
@@ -74,7 +79,8 @@
         background-color: #0A3871;
         border: 1px solid white;
         border-radius: 20px;
-        padding: 1rem 3.5rem 1rem;
+        margin-top: 1rem;
+        padding: 1.5rem 3.5rem 1.5rem;
     } 
 
     #texto-salida {
@@ -105,6 +111,7 @@
     }
 
     #copy {
+        display: none;
         position: absolute;
         font-size: 1.5rem;
         top: 0.7rem;
@@ -134,5 +141,170 @@
         text-align: center;
         font-family: 'Ubuntu', sans-serif;
         color: #002d64;
+    }
+
+    #btn-encriptar:hover {
+        color: #0A3871;
+        background-color: #F3F5FC;
+        border: 0.1em solid #0A3871;
+        cursor: pointer;
+    }
+    
+    #btn-desencriptar:hover {
+        color: #0A3871;
+        background-color: #F3F5FC;
+        border: 0.1em solid #0A3871;
+        cursor: pointer;
+    }
+
+    #copy:active {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    html {
+        font-size: 25px;
+    }
+
+    body {
+        background-color: #E9ECF8;
+    }
+
+    #logo {
+        display: block;
+        margin: 1rem 0 1rem 1rem;
+    }
+
+    #base {
+        display: flex;
+        position: relative;
+        max-width: 100vw;
+    }
+
+    #texto-aqui {
+        padding-left: 3%;
+    }
+
+    #entrada, #entrada:focus {
+        font-size: 1rem;
+        font-family: 'Ubuntu', sans-serif;
+        color: #002d64;
+        background-color: #F3F5FC;
+        box-sizing: border-box;
+        padding: 1.3rem;
+        height: 20rem;
+        width: 45vw;
+        resize:none;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        margin: 0;
+        filter: drop-shadow(0 0 1rem rgba(139, 141, 248, 0.171));
+    }
+
+    #btn {
+        display: block;
+    }
+
+    #botones {
+        display: flex;
+    }
+
+    p {
+        font-size: 0.6rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bolder;
+        color: rgb(59, 59, 59);
+        padding-left: 1rem;
+    }
+
+    #btn-encriptar {
+        font-size: 1rem;
+        font-family: 'Chivo Mono', monospace;
+        color: white;
+        background-color: #0A3871;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 0.5rem 1rem 0.5rem;
+    }
+
+    #btn-desencriptar {
+        font-size: 1rem;
+        font-family: 'Chivo Mono', monospace;
+        color: white;
+        background-color: #0A3871;
+        border: 1px solid white;
+        border-radius: 20px;
+        margin-top: 0;
+        margin-left: 0.5rem;
+        padding: 0.5rem 1rem 0.5rem;
+    } 
+
+    #texto-salida {
+        position: relative;
+        margin-top: 0;
+    }
+
+    #area-salida {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    #salida {
+        font-size: 1rem;
+        font-family: 'Ubuntu', sans-serif;
+        color: #002d64;
+        background-color: #F3F5FC;
+        box-sizing: border-box;
+        padding: 1.3rem;
+        height: 20rem;
+        width: 45vw;
+        resize:none;
+        outline: none;
+        pointer-events: none;
+        border: none;
+        border-radius: 10px;
+        margin: 0;
+        filter: drop-shadow(0 0 1rem rgba(139, 141, 248, 0.171));
+    }
+
+    #copy {
+        display: none;
+        position: absolute;
+        font-size: 0.8rem;
+        top: 0.6rem;
+        right: 0.8rem;
+        padding: 0.7em;
+        border: 1px solid;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #dibujo {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: -19rem;
+        width: 13rem;
+        padding: 0.7em;
+        pointer-events: none;
+    }
+
+    #nose {
+        display: block;
+        position: relative;
+        font-size: 1rem;
+        top: -19rem;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        color: #002d64;
+    }
+
+    #copy:active {
+        font-size: 0.7rem;
     }
 }
