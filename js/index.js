@@ -9,7 +9,7 @@ let salida = document.getElementById('salida')
 
 function encriptar(texto) {
     let textoEncriptado = "";
-    const cifrado = ['A', 'b', 'O', 'U'];
+    const cifrado = ['a', 'b', 'o', 'u'];
   
     for (let i = 0; i < texto.length; i++) {
       textoEncriptado += texto[i] + cifrado[i % cifrado.length];
@@ -31,7 +31,7 @@ function encriptar(texto) {
 
   function esEncriptado(texto) {
     const indices = [texto[1], texto[3], texto[5], texto[7]];
-    const cifrado = ['A', 'b', 'O', 'U'];
+    const cifrado = ['a', 'b', 'o', 'u'];
   
     const sonIguales = indices.every((valor, indice) => valor === cifrado[indice]);
   
