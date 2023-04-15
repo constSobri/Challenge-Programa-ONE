@@ -8,35 +8,27 @@ let nose = document.getElementById('nose')
 let salida = document.getElementById('salida')
 
 function encriptar(texto) {
-    let textoEncriptado = "";
-    const cifrado = ['a', 'b', 'o', 'u'];
-  
-    for (let i = 0; i < texto.length; i++) {
-      textoEncriptado += texto[i] + cifrado[i % cifrado.length];
-    }
-    console.log(textoEncriptado)
-    return textoEncriptado;
-  }
+    let mensaje = "";
+    return mensaje = texto.replace(/e/g, "enter")
+      .replace(/i/g, "imes")
+      .replace(/a/g, "ai")
+      .replace(/o/g, "ober")
+      .replace(/u/g, "ufat");
+}
   
 
-  function desencriptar(textoEncriptado) {
-    let texto = "";
+function desencriptar(textoEncriptado) {
+    let mensajeEncriptado = "";
+    return mensajeEncriptado = textoEncriptado.replace(/enter/g, "e")
+        .replace(/imes/g, "i")
+        .replace(/ai/g, "a")
+        .replace(/ober/g, "o")
+        .replace(/ufat/g, "u");
+}
 
-    for (let i = 0; i < textoEncriptado.length; i += 2) {
-      texto += textoEncriptado[i];
-    }
-    console.log(texto)
-    return texto;
-  }
-
-  function esEncriptado(texto) {
-    const indices = [texto[1], texto[3], texto[5], texto[7]];
-    const cifrado = ['a', 'b', 'o', 'u'];
-  
-    const sonIguales = indices.every((valor, indice) => valor === cifrado[indice]);
-  
-    return sonIguales;
-  }
+function esEncriptado(texto) {
+    return /enter|imes|ai|ober|ufat/.test(texto);
+}
   
 
 btnEn.addEventListener('click', () => {
