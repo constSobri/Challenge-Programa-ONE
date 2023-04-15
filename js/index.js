@@ -61,12 +61,10 @@ btnDes.addEventListener('click', () => {
 
 areaCopy.addEventListener('mouseover', () => {
     copy.style.display = 'initial'
-    console.log('A')
 } )
 
 areaCopy.addEventListener('mouseout', () => {
     copy.style.display = 'none'
-    console.log('A')
 } )
 
 copy.addEventListener('click', () => {
