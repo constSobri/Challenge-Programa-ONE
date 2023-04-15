@@ -23,7 +23,7 @@ function desencriptar(textoEncriptado) {
         .replace(/imes/g, "i")
         .replace(/ai/g, "a")
         .replace(/ober/g, "o")
-        .replace(/ufat/g, "u");
+        .replace(/ufat/g, "u")
 }
 
 function esEncriptado(texto) {
